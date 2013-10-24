@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %b Item number:
+  = @stock.item_number
+%p
+  %b Item name:
+  = @stock.item_name
+%p
+  %b Item type:
+  = @stock.item_type
+= link_to 'Edit', edit_stock_path(@stock)
+|
+\#{link_to 'Back', stocks_path}
